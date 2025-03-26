@@ -1,36 +1,129 @@
-# 🤖 UFM²-R: Unified Federated Multi-Modal Foundation Model with Interpretable Reasoning
+# 🌐 UFM²-R & UFM³-R: Unified Federated Multi-Modal Foundation Models with Interpretable Reasoning
 
-**FedMM-X** is a federated learning framework built for **multi-modal data** — combining **image (MNIST)**, **text (IMDB)**, and **tabular** features — with a focus on privacy, trust, and interpretability.
+> 🚀 A next-generation framework for privacy-preserving, interpretable, and scalable multi-modal federated learning.
 
-## 🔍 Key Features
+---
 
-- ✅ **Privacy-Preserving Learning**: Data never leaves the client.
-- 🧠 **Multi-Modal Model**: Unified neural network processes image, text, and tabular inputs.
-- 🎯 **Trust-Weighted Aggregation**: Clients contribute based on reliability scores.
-- 📈 **FedAvg vs. FedMM-X**: Compare aggregation strategies and accuracy across clients.
-- 💬 **LIME Interpretability**: Generate HTML explanations showing which tabular features influenced predictions.
+## 📌 Overview
 
-## 🌐 Project Workflow
+**UFM²-R** (Unified Federated Multi-Modal Foundation Model with Interpretable Reasoning)  
+**UFM³-R** (Unified Federated Multi-Modal Multi-Modal Model with Reasoning & Robustness)
 
-1. Load and align MNIST + IMDB data into multi-modal format.
-2. Split data across clients with assigned trust levels.
-3. Train using both **FedAvg** and **FedMM-X** methods.
-4. Evaluate client accuracy and explainability using **LIME**.
-5. Visualize results with comparison plots and explanation dashboards.
+These frameworks unify **federated learning**, **multi-modal modeling**, and **explainability** across distributed clients. Built for **vision**, **text**, and **tabular** modalities, UFM²/UFM³ ensure that real-world deployments (e.g., healthcare, finance) benefit from:
 
-## 📊 Live Visualization
+- 🔒 **Data privacy**
+- 🤖 **Foundation model scalability**
+- 🧠 **Interpretable predictions**
+- ⚖️ **Client-level trust and robustness**
+- 🌍 **Decentralized intelligence**
 
-A **dynamic global graph** tracks each client’s accuracy and interpretability contribution during training. This helps identify which clients drive global performance and where explanations align or diverge.
+---
 
-> ⚡ Coming soon: Streamlit dashboard for real-time federated interpretability!
+## 🧩 Architecture
+
+```
++---------------------------+        +---------------------------+
+|    Client 1 (Hospital A)  |        |    Client 2 (Lab B)       |
+|  [Image, Text, Tabular]   |  ...   |  [Image, Text, Tabular]   |
+|     ↳ Local Encoder       |        |     ↳ Local Encoder       |
+|     ↳ Local Reasoner      |        |     ↳ Local Reasoner      |
++-------------+-------------+        +-------------+-------------+
+              |                                 |
+              |        Model Updates            |
+              +-------------+-------------------+
+                            ↓
+                  🌐 Federated Aggregator
+                            ↓
+         +------------------+--------------------+
+         |                                          |
+         |      UFM²-R / UFM³-R Global Model        |
+         |    +------------------------------+      |
+         |    |  Multi-Modal Backbone         |      |
+         |    |  Interpretable Fusion Layer   |      |
+         |    |  Trust-Aware Aggregator       |      |
+         |    +------------------------------+      |
+         |                                          |
+         +------------------+--------------------+
+```
+
+---
+
+## 🔍 Key Capabilities
+
+| Feature                        | UFM²-R ✅ | UFM³-R ✅ |
+|-------------------------------|-----------|-----------|
+| Multi-modal Inputs            | ✅         | ✅         |
+| Federated Learning            | ✅         | ✅         |
+| LIME/SHAP Interpretability    | ✅         | ✅         |
+| Dynamic Trust Aggregation     | ✅         | ✅         |
+| Robustness to Data Drift      | ❌         | ✅         |
+| Client-Level Explanation Logs | ✅         | ✅         |
+| Adaptive Federated Rounds     | ❌         | ✅         |
+| Streaming Data Support        | ❌         | ✅         |
+
+---
+
+## 📊 Dynamic Visualization
+
+UFM²-R and UFM³-R provide:
+
+- 📈 **Real-time Accuracy Dashboards**
+- 🧠 **Client-Level Explanation Panels (LIME/SHAP)**
+- 🌐 **Global Interpretability Graphs**
+- ⚖️ **Trust-weight Heatmaps**
+
+> Example:  
+> ![Client Accuracy Comparison](checkpoints/accuracy_comparison.png)  
+> ![LIME Explanation](lime_explanation_client_10.html)
+
+---
+
+## 🛠️ Getting Started
+
+```bash
+git clone https://github.com/yourusername/UFM2-UFM3
+cd UFM2-UFM3
+pip install -r requirements.txt
+python train_ufm2.py  # or train_ufm3.py
+```
+
+---
 
 ## 📁 Outputs
 
-- `checkpoints/` – Saved FedAvg and FedMM-X models
-- `lime_explanation_client_*.html` – Feature attribution visualizations per client
-- `accuracy_comparison.png` – Bar chart comparing FedAvg and FedMM-X
+| File                              | Description                                       |
+|-----------------------------------|---------------------------------------------------|
+| `checkpoints/`                    | Trained models for UFM²-R and UFM³-R              |
+| `lime_explanation_client_*.html` | Per-client interpretable explanations             |
+| `accuracy_comparison.png`        | Bar chart showing model performance per client    |
+| `trust_scores.json`              | Dynamic trust weight logs per round               |
 
-## 🛠️ Requirements
+---
 
-```bash
-pip install torch torchvision flwr datasets lime matplotlib
+## 👩‍🔬 Research Directions
+
+- Cross-modal attention refinement  
+- Quantum-inspired federated encoding  
+- Adaptive explanation-aware dropout  
+- Personalized reasoning layers per client
+
+---
+
+## 📣 Citations (Coming Soon)
+
+> If you use this work in academic research, please cite our upcoming paper!
+
+---
+
+## 🤝 Contributing
+
+We welcome contributors from ML, systems, HCI, and privacy domains. Please open an issue or pull request if you're interested!
+
+---
+
+## 📬 Contact
+
+Maintained by **[Your Name]** — [your.email@example.com]  
+Inspired by the goal to make **federated foundation models truly interpretable** and **trustworthy**.
+
+---
