@@ -81,7 +81,7 @@ UFM²-R and UFM³-R provide:
 ## 🛠️ Getting Started
 
 ```bash
-git clone https://github.com/yourusername/UFM2-UFM3
+git clone https://github.com/sreebhargavibalijaa/UFM2-UFM3
 cd UFM2-UFM3
 pip install -r requirements.txt
 python train_ufm2.py  # or train_ufm3.py
@@ -123,7 +123,7 @@ We welcome contributors from ML, systems, HCI, and privacy domains. Please open 
 
 ## 📬 Contact
 
-Maintained by **[Your Name]** — [your.email@example.com]  
+Maintained by **[Sree bhargavi balija]** — [sbalija@ucsd.edu]  
 Inspired by the goal to make **federated foundation models truly interpretable** and **trustworthy**.
 
 ---
