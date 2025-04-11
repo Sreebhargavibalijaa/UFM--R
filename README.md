@@ -10,6 +10,7 @@
 **UFM³-R** (Unified Federated Multi-Modal Multi-Modal Model with Reasoning & Robustness)
 
 These frameworks unify **federated learning**, **multi-modal modeling**, and **explainability** across distributed clients. Built for **vision**, **text**, and **tabular** modalities, UFM²/UFM³ ensure that real-world deployments (e.g., healthcare, finance) benefit from:
+![image](https://github.com/user-attachments/assets/8ac41fd9-abe2-40ba-922f-37720c29156c)
 
 - 🔒 **Data privacy**
 - 🤖 **Foundation model scalability**
